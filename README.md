@@ -1,10 +1,13 @@
 # react-native-device-settings
 
+*Forked to remove ability to call forbidden url schemes on ios*
+
+
 React Native simple platform agnostic API to open up device settings menus
 
 ## Install
 ```
-npm install react-native-device-settings --save
+npm install https://github.com/sandfox/react-native-device-settings --save
 ```
 
 ### Automatic Install
@@ -53,13 +56,13 @@ react-native link react-native-device-settings
 
 import DeviceSettings from 'react-native-device-settings';
 
-// Open settings menu
+// Open settings menu - ANDROID ONLY
 DeviceSettings.open();
 
 // Open app settings menu
 DeviceSettings.app();
 
-// Open wifi settings menu
+// Open wifi settings menu - ANDROID ONLY
 DeviceSettings.wifi();
 ```
 

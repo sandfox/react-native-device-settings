@@ -4,9 +4,9 @@ const { RNOpenSettings } = NativeModules;
 
 function open(){
   try{
-    (Platform.OS === 'ios') ?
-      Linking.openURL('App-prefs:') :
+    if (Platform.OS !== 'ios') {
       RNOpenSettings.generalSettings();
+    }
   }catch(err){
     console.error(err);
   }
@@ -24,9 +24,9 @@ function app(){
 
 function wifi(){
   try{
-    (Platform.OS === 'ios') ?
-      Linking.openURL('App-prefs:root=WIFI') :
+    if (Platform.OS !== 'ios') {
       RNOpenSettings.wifiSettings();
+    }
   }catch(err){
     console.error(err);
   }

@@ -16,10 +16,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rjblopes/react-native-device-settings.git"
+    "url": "git+https://github.com/sandfox/react-native-device-settings.git"
   },
   "bugs": {
-    "url": "https://github.com/rjblopes/react-native-device-settings/issues"
+    "url": "https://github.com/sandfox/react-native-device-settings/issues"
   },
-  "homepage": "https://github.com/rjblopes/react-native-device-settings#readme"
+  "homepage": "https://github.com/sandfox/react-native-device-settings#readme"
 }
